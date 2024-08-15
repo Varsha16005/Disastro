@@ -1,0 +1,56 @@
+body {
+    font-family: Roboto;
+    background-color: #f7f7f7;
+  }
+  
+  .dropdown {
+    position: relative;
+    width: 500px;
+    margin: 20px auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid;
+    border-radius: 4px;
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555555;
+    outline: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="grey" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+  }
+  
+  select:focus {
+    border-color: #333;
+  }
+  
+  option {
+    padding: 10px;
+    background: #fff;
+  }
+  
+  option:checked {
+    background: #9d83f3;
+    color: #180d56;
+  }
+  .loc{
+    font-size:larger;
+    width: 500px;
+    color: #fff;
+   
+  }

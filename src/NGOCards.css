@@ -1,0 +1,81 @@
+/* NGOCards.css */
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 310vh;
+  background: linear-gradient(to right, rgb(167, 203, 250), rgb(107, 105, 242));
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+.choose-button:hover{
+  background-color: rgb(1, 8, 12);
+}
+.choose-button{
+  background-color: rgb(0, 0, 0);
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px; 
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  transition: transform 0.2s, box-shadow 0.5s;
+  background-color: var(--default-background);
+  border: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s;
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 40, 106, 0.7);
+  color: rgb(252, 244, 244);
+  padding: 20px;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card:hover .card-content {
+  opacity: 1; 
+}
+
+.card:hover img {
+  opacity: 0.1;
+}
+
+.anchors {
+  color: rgb(194, 216, 53);
+  font-weight: bolder;
+  font-size: larger;
+}
+.on {
+  background-color: rgb(226, 226, 226);
+  color: aliceblue;
+}
+
+.on:hover {
+  background-color: black;
+}
